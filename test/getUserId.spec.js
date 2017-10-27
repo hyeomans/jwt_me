@@ -1,4 +1,4 @@
-const getUserId = require(path.join(process.cwd(), 'src', 'getUserID'));
+const getUserId = require('../src/getUserId');
 
 describe('GetUserId tests', () => {
   it('returns userId', () => {

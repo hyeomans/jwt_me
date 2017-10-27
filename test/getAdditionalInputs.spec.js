@@ -1,8 +1,4 @@
-const getAdditionalInputs = require(path.join(
-  process.cwd(),
-  'src',
-  'getAdditionalInputs'
-));
+const getAdditionalInputs = require('../src/getAdditionalInputs');
 
 describe('GetAditionalInputs tests', () => {
   describe('When user needs more keys', () => {

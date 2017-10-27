@@ -1,4 +1,4 @@
-const getEmail = require(path.join(process.cwd(), 'src', 'getEmail'));
+const getEmail = require('../src/getEmail');
 
 describe('GetEmail tests', () => {
   describe('When email is invalid', () => {
