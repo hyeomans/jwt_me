@@ -3,7 +3,7 @@
 
 # [jwt_me](https://github.com/hyeomans/jwt_me)
 
-jwt_me is a command line interface tool that will generate a JWT token. In this version `user_id` and `email` are required by default.
+jwt_me is a command line interface tool that will generate a JWT token. In this version `user_id` and `email` are required by default. Once the process is finished, the JWT token will be copied to your clipboard!
 
 # Installation
 
@@ -11,6 +11,23 @@ To run `jwt_me` you need to install the latest version of [Node.js](https://node
 
 ```
 npm install -g jwt_me
+```
+
+# Usage
+
+```
+> jwt_me
+$ Enter key 1
+> user_id
+$ Enter user_id value
+> 11211
+$ Enter key 2
+> email
+$ Enter email value
+> sample@sample.com
+$ Any additional inputs? (yes/no)
+> no
+$ The JWT has been copied to your clipboard!
 ```
 
 # Removal
