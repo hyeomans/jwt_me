@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const prompt = require('prompt-promise');
 const Promise = require('bluebird');
 const uuid = require('uuid');
@@ -30,5 +32,7 @@ getRequiredKeys(initialState)
   .then(getAditionalInputs)
   .then(({keys}) => jwt.sign(keys, secretKey()))
   .then(copyTextToClipBoard)
-  .then(console.log.bind(console, 'The JWT has been copied to you clipboard!'))
-  .then(process.exit.bind());
+  .then(() => {
+    console.log('The JWT has been copied to you clipboard!');
+    process.exit();
+  });

@@ -1,8 +1,11 @@
 {
   "name": "jwt_me",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JWT CLI Generator",
   "main": "src/index.js",
+  "bin": {
+    "jwt_me": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index",
     "prepush": "node node_modules/.bin/mocha",
