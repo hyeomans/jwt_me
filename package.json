@@ -1,0 +1,46 @@
+{
+  "name": "jwt_me",
+  "version": "0.1.0",
+  "description": "JWT CLI Generator",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "prepush": "node node_modules/.bin/mocha",
+    "test": "./node_modules/.bin/mocha",
+    "test:watch": "nodemon --exec mocha --watch",
+    "coverage":
+      "nyc --require dotenv/config --reporter=html mocha --timeout=3000"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma none --single-quote --write",
+      "git add"
+    ],
+    "*.json": ["prettier --trailing-comma none --write", "git add"]
+  },
+  "keywords": ["JWT", "CLI", "generator"],
+  "author": "Hector Yeomans <me@hyeomans.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyeomans/jwt_me"
+  },
+  "dependencies": {
+    "bluebird": "3.5.1",
+    "copy-paste": "1.3.0",
+    "jsonwebtoken": "8.1.0",
+    "prompt-promise": "1.0.3",
+    "uuid": "3.1.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "husky": "0.14.3",
+    "lint-staged": "4.3.0",
+    "mocha": "4.0.1",
+    "nodemon": "1.12.1",
+    "nyc": "11.2.1",
+    "prettier": "1.7.4",
+    "sinon": "4.0.2"
+  }
+}
