@@ -1,5 +1,6 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/hyeomans/jwt_me/tree/master.svg?style=svg)](https://circleci.com/gh/hyeomans/jwt_me/tree/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a82b226ba5eff8368e87/maintainability)](https://codeclimate.com/github/hyeomans/jwt_me/maintainability)
 
 # [jwt_me](https://github.com/hyeomans/jwt_me)
 
